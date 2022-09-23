@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
     <script src="./assets/js/index.js"></script>
   </head>
   <body>
@@ -28,7 +29,7 @@
               </h5>
             </div>
             <form action="" class="block-right-form">
-              <div class="block-right-form-email ">
+              <div class="block-right-form-email error">
                 <label for="email" class="block-right-form-label">
                   Email
                 </label>
@@ -36,13 +37,13 @@
                   name="email"
                   id="email"
                   placeholder="name@netpower.no"
-                  class="block-right-form-input"
+                  class="block-right-form-input input"
                 />
                 <button class="block-right-form-action__remove">
                 </button>
               </div>
               <div class="block-right-form-password error">
-                <label for="password" class="block-right-form-label">
+                <label for="password" class="block-right-form-label label">
                   Password
                 </label>
                 <input
@@ -50,7 +51,7 @@
                   id="password"
                   type="password"
                   placeholder="•••••••"
-                  class="block-right-form-input"
+                  class="block-right-form-input input"
                 />
                 <button class="block-right-form-action__show">
                 </button>
@@ -58,33 +59,33 @@
               <div class="block-right-form-remember">
                 <div class="block-right-form-remember-checkbox">
                   <input
-                    class="block-right-form-remember-checkbox__input"
+                    class="block-right-form-remember-checkbox__input "
                     name="remember"
                     type="checkbox"
                   />
                   <label
-                    class="block-right-form-remember-checkbox__label"
+                    class="block-right-form-remember-checkbox__label label"
                     for="remember"
                     >Remember me</label
                   >
                 </div>
                 <div class="block-right-form-remember-link">
-                  <a class="block-right-form-remember-link" href=""
+                  <a class="block-right-form-remember-link link" href=""
                     >Forgot Password?</a
                   >
                 </div>
               </div>
               <div class="block-right-form-submit">
                 <button
-                onsubmit="validateFunction()"
+                onsubmit=""
                   type="submit"
-                  class="block-right-form-submit-button"
+                  class="block-right-form-submit-button button"
                 >Log In</button>
               </div>
               <div class="block-right-form-signup">
                 <div class="block-right-form-signup-body">Don't have an account? <a
                     href=""
-                    class="block-right-form-signup-body__link"
+                    class="block-right-form-signup-body__link link"
                     > Sign up</a
                   ></div>
                 </div>
