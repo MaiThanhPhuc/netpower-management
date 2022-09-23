@@ -1,0 +1,220 @@
+/* Reset CSS */
+html,
+body {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* End reset */
+.container {
+  height: 100%;
+}
+.inner {
+  height: 100%;
+}
+.block-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: linear-gradient(151.25deg, #5dd6ff -7.2%, #188cb3 109.82%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-left-image {
+  display: block;
+  width: 66%;
+}
+.block-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.block-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 56px;
+  height: 453px;
+}
+
+.block-right-heading__main {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #344054;
+}
+.block-right-heading__sub {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+.block-right-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 83%;
+}
+
+.block-right-form-email,
+.block-right-form-password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.block-right-form-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5a5a;
+}
+.block-right-form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 14px;
+  gap: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5a5a5a;
+  font-family: "Inter", sans-serif;
+  padding-right: 40px;
+}
+.block-right-form-input:focus {
+  border: 2px solid #0163b2;
+}
+.block-right-form-action__show,
+.block-right-form-action__remove {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 999px;
+  right: 0;
+  top: 0;
+  padding: 0;
+  transform: translate(-50%, 100%);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.block-right-form-action__remove {
+  background-image: url("../images/remove.svg");
+}
+.block-right-form-action__show {
+  background-image: url("../images/show.svg");
+}
+.block-right-form-remember {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.block-right-form-remember-checkbox {
+  display: flex;
+  align-items: center;
+}
+.block-right-form-remember-checkbox__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5a5a;
+}
+.block-right-form-remember-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #0163b3;
+}
+.block-right-form-submit {
+  width: 100%;
+}
+.block-right-form-submit-button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  gap: 10px;
+  border-radius: 8px;
+  background: #0163b3;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+.block-right-form-submit-button:hover {
+  background: #5590e5;
+  border-radius: 8px;
+}
+.block-right-form-submit-button:focus {
+  background: #002e68;
+  border-radius: 8px;
+}
+
+.block-right-form-signup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-right-form-signup-body__link {
+  text-decoration: none;
+  color: #0163b3;
+}
+.block-right-form-signup-body {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 798px) {
+  .block-left {
+    display: none;
+  }
+  .block-right-heading {
+    width: 83%;
+  }
+}
+
+@media (min-width: 799px) and (max-width: 940px) {
+  .block-right-heading {
+    width: 83%;
+  }
+}
+
+.error > label {
+  color: #c62828;
+}
+.error > input {
+  border: 2px solid #c62828;
+}
