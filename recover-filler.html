@@ -4,44 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netpower</title>
+    <title>Forgot password</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/recover-filler.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <script src="./assets/js/index.js"></script>
   </head>
   <body>
     <div class="container height-100">
       <div class="block-left height-100 container-50">
         <img
           class="block-left-image"
-          src="./assets/images/indeer.png"
+          src="./assets/images/think-different.png"
           alt="indeer"
         />
       </div>
       <div class="block-right height-100">
         <div class="block-right-wrapper">
           <div class="block-right-heading">
-            <h2 class="block-right-heading__main">Hello, Welcome Back!</h2>
+            <h2 class="block-right-heading__main">Recover password</h2>
             <h5 class="block-right-heading__sub">
-              Please fill in your infomation to get access.
+              Insert your email to recover your password.
             </h5>
           </div>
           <form action="" class="block-right-form">
-            <div class="block-right-form-email">
-              <label for="email" class="block-right-form-label"> Email </label>
-              <input
-                name="email"
-                id="email"
-                placeholder="name@netpower.no"
-                class="block-right-form-input input"
-              />
-              <button class="block-right-form-action__remove"></button>
-            </div>
-            <div class="block-right-form-password error">
+            <div class="block-right-form-password">
               <label for="password" class="block-right-form-label label">
                 Password
               </label>
@@ -52,37 +41,35 @@
                 placeholder="•••••••"
                 class="block-right-form-input input"
               />
+              <button
+                class="block-right-form-action__show disable-icon"
+              ></button>
               <button class="block-right-form-action__hide"></button>
-              <button class="block-right-form-action__show"></button>
             </div>
-            <div class="block-right-form-remember">
-              <div class="block-right-form-remember-checkbox">
-                <input
-                  class="block-right-form-remember-checkbox__input"
-                  name="remember"
-                  type="checkbox"
-                />
-                <label
-                  class="block-right-form-remember-checkbox__label label"
-                  for="remember"
-                  >Remember me</label
-                >
-              </div>
-              <div class="block-right-form-remember-link">
-                <a
-                  class="block-right-form-remember-link link"
-                  href="recover.html"
-                  >Forgot Password?</a
-                >
-              </div>
+
+            <div class="block-right-form-repassword error">
+              <label for="repassword" class="block-right-form-label label">
+                Confirm Password
+              </label>
+              <input
+                name="repassword"
+                id="repassword"
+                type="password"
+                placeholder="•••••••"
+                class="block-right-form-input input"
+              />
+              <button
+                class="block-right-form-action__hide disable-icon"
+              ></button>
+              <button class="block-right-form-action__show"></button>
             </div>
             <div class="block-right-form-submit">
               <button
-                onsubmit=""
+                disabled
                 type="submit"
                 class="block-right-form-submit-button button"
               >
-                Log In
+                Reset password
               </button>
             </div>
             <div class="block-right-form-signup">

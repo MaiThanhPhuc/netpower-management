@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netpower</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <script src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <div class="container height-100">
+      <div class="block-left height-100 container-50">
+        <img
+          class="block-left-image"
+          src="./assets/images/netpower.png"
+          alt="indeer"
+        />
+      </div>
+      <div class="block-right height-100">
+        <div class="block-right-wrapper">
+          <div class="block-right-heading display-none">
+            <h2 class="block-right-heading__main">Sign up</h2>
+            <h5 class="block-right-heading__sub">
+              Create your account to use wonderful resources.
+            </h5>
+          </div>
+          <form action="" class="block-right-form display-none">
+            <div class="block-right-form-fullname mb-20">
+              <label for="fullname" class="block-right-form-label">
+                Fullname
+              </label>
+              <input
+                name="fullname"
+                id="fullname"
+                placeholder="name@netpower.no"
+                class="block-right-form-input input"
+              />
+              <button class="block-right-form-action__remove"></button>
+            </div>
+            <div class="block-right-form-email mb-20">
+              <label for="email" class="block-right-form-label"> Email </label>
+              <input
+                name="email"
+                id="email"
+                placeholder="name@netpower.no"
+                class="block-right-form-input input"
+              />
+              <button class="block-right-form-action__remove"></button>
+            </div>
+            <div class="block-right-form-password mb-8">
+              <label for="password" class="block-right-form-label label">
+                Password
+              </label>
+              <input
+                name="password"
+                id="password"
+                type="password"
+                placeholder="•••••••"
+                class="block-right-form-input input"
+              />
+              <button class="block-right-form-action__show"></button>
+              <button class="block-right-form-action__hide"></button>
+            </div>
+            <div class="block-right-form-repassword">
+              <label for="repassword" class="block-right-form-label label">
+                Confirm password
+              </label>
+              <input
+                name="repassword"
+                id="repassword"
+                type="repassword"
+                placeholder="•••••••"
+                class="block-right-form-input input"
+              />
+              <button class="block-right-form-action__show"></button>
+              <button class="block-right-form-action__hide"></button>
+            </div>
+
+            <div class="block-right-form-submit mb-16">
+              <button
+                onsubmit=""
+                type="submit"
+                class="block-right-form-submit-button button"
+              >
+                Sign up
+              </button>
+            </div>
+            <div class="block-right-form-terms">
+              <div class="block-right-form-terms-checkbox">
+                <input
+                  class="block-right-form-terms-checkbox__input"
+                  name="terms"
+                  type="checkbox"
+                />
+                <label
+                  class="block-right-form-terms-checkbox__label label"
+                  for="terms"
+                  >I agree with terms and conditions</label
+                >
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="block-right-form-signin mb-16">
+              <a
+                href="index.html"
+                class="block-right-form-signin-button button-outline"
+              >
+                Sign in
+              </a>
+            </div>
+            <div class="block-right-form-recover">
+              <div class="block-right-form-recover-body">
+                You forgot password?
+                <a
+                  href="recover.html"
+                  class="block-right-form-recover-body__link link"
+                  >Recover password
+                </a>
+              </div>
+            </div>
+          </form>
+
+          <!-- check mail block -->
+          <div class="block-right-check-email">
+            <div class="block-right-check-email-icon">
+              <img src="./assets/images/loading-progress.png" alt="loading" />
+            </div>
+            <div class="block-right-check-email-subheading">
+              <span>Check your email to activate your account</span>
+              <span>(120s)</span>
+            </div>
+            <div class="block-right-check-email-button">
+              <button class="button">Resend activate link</button>
+            </div>
+          </div>
+          <!-- expired mail block -->
+          <div class="block-right-expired-email">
+            <div class="block-right-expired-email-icon">
+              <img src="./assets/images/expired.svg" alt="loading" />
+            </div>
+            <div class="block-right-expired-email-subheading">
+              <span>Expired activation. Please re-activate your account.</span>
+            </div>
+            <div class="block-right-expired-email-button">
+              <button class="button">Re-activate account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

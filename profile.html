@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/profile.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+  </head>
+  <body>
+    <div class="container height-100">
+      <nav class="navigator">
+        <div class="inner-navigator">
+          <div class="navigator-left">
+            <img src="./assets/images/netpower-logo.png" alt="netpower-logo" />
+          </div>
+          <div class="navigator-right">
+            <div class="navigator-right-search">
+              <input
+                class="navigator-right-search__input"
+                type="text"
+                placeholder="Search"
+              />
+              <span class="navigator-right-search__icon">
+                <img src="./assets/images/search.svg" alt="search-icon" />
+              </span>
+            </div>
+            <!-- Reponsive -->
+            <div class="navigator-right-hamburger">
+              <span class="navigator-right-hamburger__open">
+                <img src="./assets/images/hamburger.svg" alt="" />
+              </span>
+              <span class="navigator-right-hamburger__close display-none">
+                <img src="./assets/images/x-icon.svg" alt="" />
+              </span>
+            </div>
+            <!-- End Reponsive -->
+            <ul class="navigator-right-action hamburger-active">
+              <li class="navigator-right-action__notification">
+                <img
+                  src="./assets/images/notifications.svg"
+                  alt="notifications-icon"
+                />
+              </li>
+              <li class="navigator-right-action__help">
+                <img src="./assets/images/help-circle.svg" alt="help-icon" />
+              </li>
+              <li class="navigator-right-action__setting">
+                <img src="./assets/images/setting.svg" alt="setting-icon" />
+              </li>
+              <li class="navigator-right-action__avatar">
+                <img src="./assets/images/avatar-24x24.png" alt="avatar-icon" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="inner height-100">
+        <aside class="sidebar">
+          <div class="sidebar-action">
+            <ul class="sidebar-action-items">
+              <li>
+                <img src="./assets/images/home.svg" alt="home" />
+                <a>Inter</a>
+              </li>
+              <li class="active-button"><a>Profile</a></li>
+              <li><a>Tab</a></li>
+              <li><a>Setting</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-footer">
+            <span>© Netpower Kvalitet 2022 – V 1.24.1.0</span>
+          </div>
+        </aside>
+
+        <div class="content">
+          <section class="folder-tree sidebar">
+            <div class="folder-tree-inner">
+              <span class="folder-tree-heading">All documnent</span>
+              <ul class="folder-tree-items">
+                <li class="active-button folder is-nested"><a>Product</a></li>
+                <li class="folder is-nested"><a>Category</a></li>
+                <li class="folder is-nested">
+                  <a>Orders</a>
+                  <ul>
+                    <li class="folder is-nested">Order Detail</li>
+                    <li class="folder is-nested">Status</li>
+                    <li>History</li>
+                  </ul>
+                </li>
+                <li class="folder is-nested"><a>Account</a></li>
+              </ul>
+            </div>
+          </section>
+          <div class="card-body">
+            <div class="card-avatar">
+              <img src="./assets/images/avatar220x220.png" alt="" />
+              <button class="card-avatar-button"></button>
+            </div>
+            <div class="card-name">Dat Bui</div>
+            <div class="card-divider"></div>
+            <div class="card-job">UI/UX designer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

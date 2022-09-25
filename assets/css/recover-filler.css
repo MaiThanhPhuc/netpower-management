@@ -7,7 +7,7 @@
 }
 .block-left-image {
   display: block;
-  width: 63%;
+  width: 62%;
 }
 .block-right {
   display: flex;
@@ -45,26 +45,19 @@
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
-  width: 84%;
+  width: 100%;
 }
 
-.block-right-form-email,
-.block-right-form-password {
+.block-right-form-password,
+.block-right-form-repassword {
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
 }
-.block-right-form-label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--text-color);
-}
 
-.block-right-form-action__show,
-.block-right-form-action__remove,
-.block-right-form-action__hide {
+.block-right-form-action__hide,
+.block-right-form-action__show {
   width: 30px;
   height: 30px;
   display: flex;
@@ -83,33 +76,26 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.disable-icon {
-  display: none;
-}
-.block-right-form-action__remove {
-  background-image: url("../images/remove.svg");
+.block-right-form-action__hide {
+  background-image: url("../images/hide.svg");
 }
 .block-right-form-action__show {
   background-image: url("../images/show.svg");
 }
-.block-right-form-action__hide {
-  background-image: url("../images/hide.svg");
+
+.disable-icon {
+  display: none;
 }
-.block-right-form-remember {
+
+.block-right-form-access {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.block-right-form-remember-checkbox {
-  display: flex;
-  align-items: center;
+  text-align: right;
 }
 
 .block-right-form-signup-body {
   font-weight: 500;
   font-size: 14px;
 }
-
 .block-right-form-submit {
   width: 100%;
 }
@@ -125,20 +111,12 @@
   .block-left {
     display: none;
   }
-  .block-right-heading {
-    width: 83%;
-  }
-}
-
-@media (min-width: 799px) and (max-width: 940px) {
-  .block-right-heading {
-    width: 83%;
-  }
 }
 
 .error > label {
   color: var(--red);
 }
+
 .error > input {
   border: 2px solid var(--red);
 }
