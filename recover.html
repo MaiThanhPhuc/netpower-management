@@ -29,30 +29,83 @@
               Insert your email to recover your password.
             </h5>
           </div>
-          <form action="" class="block-right-form">
-            <div class="block-right-form-email error">
-              <label for="email" class="block-right-form-label label">
-                Email
-              </label>
-              <input
-                name="email"
-                id="email"
-                placeholder="name@netpower.no"
-                class="block-right-form-input input"
-              />
-              <button class="block-right-form-action__remove"></button>
+          <form action="" id="form-submit" class="form-submit block-right-form">
+            <div class="step block-right-form">
+              <div id="input_email" class="block-right-form-email">
+                <label
+                  id="label_email"
+                  for="email"
+                  class="block-right-form-label label"
+                >
+                  Email
+                </label>
+                <input
+                  name="email"
+                  id="email"
+                  placeholder="name@netpower.no"
+                  class="block-right-form-input input"
+                />
+                <button
+                  onclick="deleteAll(event)"
+                  class="block-right-form-action__remove"
+                ></button>
+              </div>
             </div>
+            <!-- step 2 -->
+            <div class="step block-right-form display-none">
+              <div class="block-right-form-password">
+                <label for="password" class="block-right-form-label label">
+                  Password
+                </label>
+                <input
+                  disabled
+                  name="password"
+                  id="password"
+                  type="password"
+                  placeholder="•••••••"
+                  class="block-right-form-input input"
+                />
+                <button
+                  class="block-right-form-action__show disable-icon"
+                ></button>
+                <button class="block-right-form-action__hide"></button>
+              </div>
+              <div id="input_repassword" class="block-right-form-repassword">
+                <label
+                  id="label_repassword"
+                  for="repassword"
+                  class="block-right-form-label label"
+                >
+                  Confirm Password
+                </label>
+                <input
+                  disabled
+                  name="repassword"
+                  id="repassword"
+                  type="password"
+                  placeholder="•••••••"
+                  class="block-right-form-input input"
+                />
+                <button
+                  type="submit"
+                  value="submit"
+                  class="block-right-form-action__hide disable-icon"
+                ></button>
+                <button class="block-right-form-action__show"></button>
+              </div>
+            </div>
+            <!-- end step 2 -->
             <div class="block-right-form-access">
-              <a class="block-right-form-access-link link" href=""
+              <a class="block-right-form-access-link link" href="#"
                 >Cannot access?</a
               >
             </div>
 
             <div class="block-right-form-submit">
               <button
-                onsubmit=""
-                type="submit"
+                id="submit_button"
                 class="block-right-form-submit-button button"
+                onclick="nextPrev(1)"
               >
                 Next
               </button>
@@ -73,4 +126,6 @@
       </div>
     </div>
   </body>
+  <script src="./assets/js/recover.js"></script>
+  <script src="./assets/js/global.js"></script>
 </html>

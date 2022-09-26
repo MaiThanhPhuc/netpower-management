@@ -1,3 +1,7 @@
+.form-submit {
+  width: 100%;
+}
+
 .block-left {
   background: linear-gradient(151.25deg, #5dd6ff -7.2%, #188cb3 109.82%);
   display: flex;
@@ -107,9 +111,46 @@
 .error > label {
   color: var(--red);
 }
-.error > label::after {
-  content: "not existed";
-}
 .error > input {
   border: 2px solid var(--red);
+}
+/* next page */
+
+.block-right-form-password,
+.block-right-form-repassword {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.block-right-form-action__hide,
+.block-right-form-action__show {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 999px;
+  right: 0;
+  top: 0;
+  padding: 0;
+  transform: translate(-50%, 100%);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.block-right-form-action__hide {
+  background-image: url("../images/hide.svg");
+}
+.block-right-form-action__show {
+  background-image: url("../images/show.svg");
+}
+
+.disable-icon {
+  display: none;
 }

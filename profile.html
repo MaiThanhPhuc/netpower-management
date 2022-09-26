@@ -78,26 +78,46 @@
             <span>© Netpower Kvalitet 2022 – V 1.24.1.0</span>
           </div>
         </aside>
+        <section class="folder-tree">
+          <div class="folder-tree-inner">
+            <div class="folder-tree-heading">All documnent</div>
+          </div>
+          <ul class="folder-tree-items">
+            <li>
+              <div class="arrow"></div>
+              <a class="folder">Product</a>
+            </li>
+            <li>
+              <div class="arrow"></div>
+              <a class="folder">Category</a>
+            </li>
+            <li class="active-button">
+              <div class="arrow arrow-open"></div>
+              <a class="folder">Orders</a>
+            </li>
+            <ul>
+              <li>
+                <div class="arrow"></div>
+                <a class="folder">Order Detail</a>
+              </li>
+              <li>
+                <div class="arrow"></div>
 
+                <a class="folder">Status</a>
+              </li>
+              <li>
+                <div class="arrow arrow-hide"></div>
+                <a class="file">History</a>
+              </li>
+            </ul>
+            <li>
+              <div class="arrow"></div>
+
+              <a class="folder">Account</a>
+            </li>
+          </ul>
+        </section>
         <div class="content">
-          <section class="folder-tree sidebar">
-            <div class="folder-tree-inner">
-              <span class="folder-tree-heading">All documnent</span>
-              <ul class="folder-tree-items">
-                <li class="active-button folder is-nested"><a>Product</a></li>
-                <li class="folder is-nested"><a>Category</a></li>
-                <li class="folder is-nested">
-                  <a>Orders</a>
-                  <ul>
-                    <li class="folder is-nested">Order Detail</li>
-                    <li class="folder is-nested">Status</li>
-                    <li>History</li>
-                  </ul>
-                </li>
-                <li class="folder is-nested"><a>Account</a></li>
-              </ul>
-            </div>
-          </section>
           <div class="card-body">
             <div class="card-avatar">
               <img src="./assets/images/avatar220x220.png" alt="" />
@@ -107,6 +127,45 @@
             <div class="card-divider"></div>
             <div class="card-job">UI/UX designer</div>
           </div>
+          <!-- Modal -->
+          <div class="modal">
+            <div class="modal-heading">
+              <span>Upload avatar</span>
+            </div>
+            <div class="modal-body">
+              <div class="modal-body-inner__upload upload-disable">
+                <div class="modal-body-inner-heading__upload">
+                  <span>Choose a file</span>
+                  or drag it here
+                </div>
+                <div class="modal-body-inner-icon__upload">
+                  <img src="./assets/images/upload.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="modal-body-inner__loading upload-active">
+                <div class="modal-body-inner-icon__loading">
+                  <img src="./assets/images/loading-progress.png" alt="" />
+                </div>
+                <div class="modal-body-inner-heading__loading">
+                  Uploading image
+                </div>
+              </div>
+
+              <div class="modal-body-inner-note">
+                Accept File Type: <span>.PNG, .JPG, .JPEG</span> only
+              </div>
+            </div>
+            <div class="modal-body-button">
+              <div class="modal-body-button__cancel">
+                <button class="button-small-outline">Cancel</button>
+              </div>
+              <div class="modal-body-button__done">
+                <button class="button-small">Done</button>
+              </div>
+            </div>
+          </div>
+          <!-- End modal -->
         </div>
       </div>
     </div>

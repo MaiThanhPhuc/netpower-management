@@ -11,7 +11,6 @@
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <script src="./assets/js/index.js"></script>
   </head>
   <body>
     <div class="container height-100">
@@ -30,19 +29,33 @@
               Please fill in your infomation to get access.
             </h5>
           </div>
-          <form action="" class="block-right-form">
-            <div class="block-right-form-email">
-              <label for="email" class="block-right-form-label"> Email </label>
+          <form class="block-right-form" onsubmit="login(event)">
+            <div id="input-email" class="block-right-form-email">
+              <label
+                id="label-email"
+                for="email"
+                class="block-right-form-label"
+              >
+                Email
+              </label>
               <input
                 name="email"
                 id="email"
+                type="text"
                 placeholder="name@netpower.no"
                 class="block-right-form-input input"
               />
-              <button class="block-right-form-action__remove"></button>
+              <button
+                onclick="deleteAll(event)"
+                class="block-right-form-action__remove"
+              ></button>
             </div>
-            <div class="block-right-form-password error">
-              <label for="password" class="block-right-form-label label">
+            <div id="input-password" class="block-right-form-password">
+              <label
+                id="label-password"
+                for="password"
+                class="block-right-form-label label"
+              >
                 Password
               </label>
               <input
@@ -52,8 +65,16 @@
                 placeholder="•••••••"
                 class="block-right-form-input input"
               />
-              <button class="block-right-form-action__hide"></button>
-              <button class="block-right-form-action__show"></button>
+              <button
+                id="hide-password"
+                onclick="hideShowPassword(event)"
+                class="block-right-form-action__hide disable-icon"
+              ></button>
+              <button
+                id="show-password"
+                onclick="hideShowPassword(event)"
+                class="block-right-form-action__show"
+              ></button>
             </div>
             <div class="block-right-form-remember">
               <div class="block-right-form-remember-checkbox">
@@ -78,7 +99,7 @@
             </div>
             <div class="block-right-form-submit">
               <button
-                onsubmit=""
+                value="submit"
                 type="submit"
                 class="block-right-form-submit-button button"
               >
@@ -101,4 +122,6 @@
       </div>
     </div>
   </body>
+  <script src="./assets/js/login.js"></script>
+  <script src="./assets/js/global.js"></script>
 </html>

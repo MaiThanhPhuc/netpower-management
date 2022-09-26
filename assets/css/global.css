@@ -73,7 +73,6 @@ input::-ms-clear {
   font-size: 16px;
   line-height: 20px;
 }
-
 .button-outline {
   display: flex;
   flex-direction: row;
@@ -85,19 +84,55 @@ input::-ms-clear {
   border-radius: 8px;
   text-decoration: none;
   color: var(--primary-blue);
+  cursor: pointer;
 }
+.button-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--primary-blue);
+  color: var(--white);
+  border: 0;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.button-small-outline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 10px;
+  border: 2px solid #0163b2;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+.button-small-outline:hover,
 .button-outline:hover {
   border: 2px solid var(--primary-blue-hover);
   color: var(--primary-blue-hover);
 }
+
+.button-small:hover,
 .button:hover {
   background: var(--primary-blue-hover);
   border-radius: 8px;
 }
+.button-small:active,
 .button:active {
   background: var(--primary-blue-focus);
   border-radius: 8px;
 }
+.button-small:disabled,
 .button:disabled {
   background-color: var(--button-disable-color);
   color: var(--text-disable-color);
